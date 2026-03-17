@@ -1,0 +1,8 @@
+baseURL = "https://casadogaspar.pages.dev/"
+languageCode = "en"
+title = "Casa do Gaspar"
+theme = "FixIt"
+
+[params]
+version = "0.0.0"
+
