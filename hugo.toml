@@ -38,7 +38,9 @@ social = true
 
 [params.social]
 GitHub = "gaspar-d"
-YouTube = "casadogaspar" # update with your actual handle
+[params.social.YouTube]
+id = "casadogaspar"
+prefix = "https://www.youtube.com/@"
 
 [menu]
 [[menu.main]]
