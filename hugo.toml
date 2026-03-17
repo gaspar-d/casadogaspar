@@ -34,10 +34,11 @@ avatarURL = "/images/avatar.png"
 title = "Casa do Gaspar"
 subtitle = "Tech, life and everything in between"
 typeit = true                                     # animated typing effect on subtitle
+social = true
 
 [params.social]
-GitHub = "https://github.com/gaspar-d"
-YouTube = "https://www.youtube.com/@casadogaspar" # update with your actual handle
+GitHub = "gaspar-d"
+YouTube = "casadogaspar" # update with your actual handle
 
 [menu]
 [[menu.main]]
