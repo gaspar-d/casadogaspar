@@ -1,7 +1,65 @@
 baseURL = "https://casadogaspar.pages.dev/"
 languageCode = "en"
+defaultContentLanguage = "en"
 title = "Casa do Gaspar"
 theme = "FixIt"
 
 [params]
 version = "0.4.X"
+description = "Tech, life and everything in between"
+keywords = ["blog", "tech", "lifestyle"]
+defaultTheme = "auto"                                # light/dark follows system
+dateFormat = "2006-01-02"
+images = ["/images/avatar.png"]
+
+[params.author]
+name = "Gaspar"
+email = ""
+link = ""
+
+[params.header]
+[params.header.title]
+name = "Casa do Gaspar"
+
+[params.footer]
+enable = true
+copyright = true
+author = true
+
+[params.home]
+rss = 10
+[params.home.profile]
+enable = true
+avatarURL = "/images/avatar.png"
+title = "Casa do Gaspar"
+subtitle = "Tech, life and everything in between"
+typeit = true                                     # animated typing effect on subtitle
+
+[params.social]
+GitHub = "casadogaspar"
+YouTube = "casadogaspar" # update with your actual handle
+
+[menu]
+[[menu.main]]
+identifier = "posts"
+name = "Posts"
+url = "/posts/"
+weight = 1
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 2
+[[menu.main]]
+identifier = "categories"
+name = "Categories"
+url = "/categories/"
+weight = 3
+
+[markup]
+[markup.highlight]
+noClasses = false
+
+[taxonomies]
+tag = "tags"
+category = "categories"
