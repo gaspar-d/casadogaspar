@@ -38,9 +38,10 @@ social = true
 
 [params.social]
 GitHub = "gaspar-d"
-[params.social.YouTube]
-id = "casadogaspar"
-prefix = "https://www.youtube.com/@"
+[params.social.youtube]
+Url = "https://www.youtube.com/@casadogaspar"
+Title = "YouTube"
+Icon = { Class = "fa-brands fa-youtube" }
 
 [menu]
 [[menu.main]]
