@@ -1,7 +1,7 @@
 ---
 title: Indeed Vivaldi
 date: 2026-03-22T18:05:46-03:00
-draft: true
+draft: false
 author:
   name: Gaspar
 description: "How a browser I never gave a cent about became my main one"
