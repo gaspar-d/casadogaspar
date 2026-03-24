@@ -20,7 +20,7 @@ categories:
 {{< admonition warning "What this post isn't" true >}}
 
 - A deep tutorial about Vivaldi features.
-- An paid Ad.
+- A paid Ad.
 - The best way to use Vivaldi ever.
 
 {{</admonition>}}
