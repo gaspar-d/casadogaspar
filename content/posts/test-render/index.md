@@ -1,5 +1,5 @@
 ---
-title: "Rendering Test Post"
+title: "Markdown cheat sheet"
 date: 2026-03-17
 draft: false
 tags: ["test", "meta", "tech"]
@@ -10,7 +10,10 @@ featuredImage: "cover.png"
 
 ## Introduction
 
-This is a paragraph of regular text. It can contain **bold**, *italic*, ~~strikethrough~~, and `inline code`. You can also add [links like this](https://casadogaspar.pages.dev).
+ I'm a very pragmatic person and so I found that that's the best place to keep my Cheat Sheet for markdowns.
+
+This is a paragraph of regular text. It can contain **bold**, *italic*, ~~strikethrough~~, and `inline code`. You can
+also add [links like this](https://casadogaspar.pages.dev).
 
 ---
 
@@ -81,13 +84,48 @@ hugo server -D
 This is a tip admonition. Great for highlighting useful information.
 {{< /admonition >}}
 
-{{< admonition warning "Watch Out" true >}}
+{{< admonition warning "Warning" true >}}
 This is a warning. Use it to flag potential issues.
 {{< /admonition >}}
 
-{{< admonition info "Good to Know" true >}}
+{{< admonition info "Info" true >}}
 This is an info box. Perfect for side notes.
 {{< /admonition >}}
+
+{{< admonition note "Pro Note" true >}}
+This is a tip admonition. Great for highlighting useful information.
+{{< /admonition >}}
+
+{{< admonition danger "Watch Danger" true >}}
+This is a warning. Use it to flag potential issues.
+{{< /admonition >}}
+
+{{< admonition success "Success" true >}}
+This is an info box. Perfect for side notes.
+{{< /admonition >}}
+
+{{< admonition question "Pro Question" true >}}
+This is a tip admonition. Great for highlighting useful information.
+{{< /admonition >}}
+
+{{< admonition quote "Quote" true >}}
+This is a warning. Use it to flag potential issues.
+{{< /admonition >}}
+
+{{< admonition bug "Bug" true >}}
+This is an info box. Perfect for side notes.
+{{< /admonition >}}
+
+{{< admonition example "Example" true >}}
+This is a tip admonition. Great for highlighting useful information.
+{{< /admonition >}}
+
+{{< admonition abstract "Abstract" true >}}
+This is a warning. Use it to flag potential issues.
+{{< /admonition >}}
+
+Other options for admonitions:
+> tip, warning, info, note, danger, success, question, quote, bug, example, abstract
 
 ---
 
@@ -104,4 +142,4 @@ graph LR
 
 ## Conclusion
 
-If everything above renders correctly, the blog is good to go. 🚀
+I need to put more tricks specific for Hugo here as they are pretty powerful. 🚀
