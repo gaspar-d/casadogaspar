@@ -11,6 +11,7 @@ keywords = ["blog", "tech", "lifestyle"]
 defaultTheme = "auto"                                # light/dark follows system
 dateFormat = "2006-01-02"
 images = ["/images/avatar.png"]
+externalIcon = true
 
 [params.author]
 name = "Gaspar"

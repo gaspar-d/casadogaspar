@@ -17,6 +17,9 @@ categories:
 
 ## First things First
 
+> [!WARNING] The release of Vivaldi 8.0 make a lot of my customizations unnecessary or deprecated, an update to this
+> article is unnecessary.
+
 {{< admonition warning "What this post isn't" true >}}
 
 - A deep tutorial about Vivaldi features.
