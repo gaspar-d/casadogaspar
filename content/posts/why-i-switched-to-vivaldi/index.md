@@ -19,7 +19,7 @@ categories:
 
 {{< admonition danger "Watch Danger" true >}}
 The release of Vivaldi 8.0 make a lot of my customizations unnecessary or deprecated, an update to this
-article is unnecessary.
+article is necessary.
 {{< /admonition >}}
 
 {{< admonition warning "What this post isn't" true >}}
@@ -65,6 +65,15 @@ Vivaldi has a feature where it 'hibernate' the tabs after sometime, but as it al
  How long it took to people notice that we don't need the tabs taking our vertical space? It make the organization so
  much easier for power-users that most of the time have +10 tabs opened.
 
+> Updated:
+As the older still holds true, I discovered this other way to navigate thru the tabs.
+By using the same shortcut `opt+shift+arrow-up/down` I'm able to navigate on a pop-up view that only triggers the tab
+loading after key release, and it's way better for my navigation.
+![The new way to navigate tabs](new-tab-navigation.png)
+In the image I let the lateral vertical tabs opened just to serve as reference, but the pop-up in the middle of the
+screen is the new hero here, as you can see it navigates while showing a preview of whats open in the tab. **It's a must**
+and I cannot live without it anymore!
+
 ![Image of the vertical tabs](tabs-workspaces.png)
  And even better being used together with the workspaces separating my stuff by context, I have the sites that I opened
  but hibernated on each workspace. So if I'm studying/working I'm not looking at unrelated stuff and at least for me it
@@ -104,7 +113,6 @@ use Google search these days.
 | Toggle Developer Tools | `⌥⌘I` |
 | Toggle Claude Panel | `⌘G` |
 | Toggle Address Bar | `⇧⌘X` |
-| Toggle Footer | `⌘/` |
 | Toggle Force Dark Mode | `⇧⌘D` |
 | Toggle Panel | `⇧⌘P` |
 | Toggle Tab Bar | `⇧⌘C` |
@@ -145,48 +153,26 @@ the rounded style and vertical tabs appearance, so why not ask my slave Claude t
 Nothing to write home about, but some sincere cherry in the cake.
 
 ```css
-/* Make the central canvas corners rounded */
-#webview-container {
-  margin: 4px;
-  border-radius: 14px;
-  overflow: hidden;
-  border: 1px solid rgba(128, 128, 128, 0.15);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+/* Remove the titlebar of the browser as hidden the url keeps the header name */
+#header, #titlebar {
+    display: none !important;
 }
 
-/* Round the corners of the vertical tab bar */
+/* Make the tabs container be a little lower than the top */
 #tabs-container.left {
   margin: -2px 0 4px 4px; /* Matches your 4px webview margin */
   padding: 20px 0 0 0; /* This is in order for the workspace name don't stay under the semaphore */
-  border-radius: 14px;
-  overflow: hidden;
-  border: 1px solid rgba(128, 128, 128, 0.15);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Change the background of ONLY the active/focused tab */
+/* Change the background of ONLY the active/focused tab to Orange */
 .tab.active {
   background-color: #FF7518 !important; /* Replace with your color */
   color: #000000 !important; /* This is the text color */ 
   font-weight: bold !important;
 }
 
-/* Change the background-color for all tabs without focus */
-.tab {
-  border: 1px solid rgba(128, 128, 128, 0.15);
-  color: #D3D3D3 !important;
-}
-
-/* Change background-color for pinned tabs */ 
-.is-pinned .tab {
-  border: 1px;
-  color: #F5F5F5 !important;
-}
-
-/* Remove the titlebar of the browser as hidden the url keeps the header name */
-#header, #titlebar {
-    display: none !important;
-}
+/* I removed a lof of the old CSS here as the Vivaldi 8.0 read my mind and put many of 
+my custom preferences as default */
 ```
 
 The result is the bellow, and well... I just noticed that my minimalist changes don't appear this good on this image,
