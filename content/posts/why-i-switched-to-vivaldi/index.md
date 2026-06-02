@@ -15,7 +15,7 @@ categories:
   - Productivity
 ---
 
-## First things First
+## **First things First**
 
 {{< admonition danger "Watch Danger" true >}}
 The release of Vivaldi 8.0 make a lot of my customizations unnecessary or deprecated, an update to this
@@ -38,7 +38,7 @@ article is necessary.
 
 {{</admonition>}}
 
-## Why Vivaldi?
+## **Why Vivaldi?**
 
 Three main points!
 
