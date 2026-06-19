@@ -248,6 +248,14 @@ img { max-width: 100%; height: auto; display: block; }
 /* Bold stays in sans */
 .prose strong { font-weight: 600; }
 
+/* Highlight ==text== */
+.prose mark {
+  background: color-mix(in srgb, var(--color-accent) 18%, transparent);
+  color: inherit;
+  border-radius: 2px;
+  padding: 1px 3px;
+}
+
 /* Horizontal rule */
 .prose hr {
   border: none;

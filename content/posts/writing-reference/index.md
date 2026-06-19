@@ -40,6 +40,20 @@ for a term, a title, a word you want to carry weight without shouting.
 
 ---
 
+## Highlight
+
+Wrap a word or phrase in `==double equals==` to mark it with a background highlight.
+
+```
+The ==most important== part of the sentence.
+```
+
+The ==most important== part of the sentence.
+
+Good for pulling out a key term or a critical warning inline without breaking flow.
+
+---
+
 ## Links
 
 ```
@@ -53,7 +67,7 @@ Example: [Casa do Gaspar](https://casadogaspar.pages.dev)
 ## Blockquote
 
 Use blockquotes for callouts, important notes, pull quotes, or anything that needs
-visual separation from the main flow. This is the replacement for admonition boxes.
+visual separation from the main flow.
 
 ```
 > The best way to get started is to quit talking and begin doing.
@@ -65,10 +79,7 @@ Renders as:
 > The best way to get started is to quit talking and begin doing.
 > — Walt Disney
 
-For a note or warning you would have used an admonition for:
-
-> **Note:** Hugo rebuilds the full site on every `hugo server` reload. This is
-> expected behavior, not a bug.
+For a note or warning:
 
 > **Watch out:** changing `baseURL` in `hugo.toml` affects all generated links
 > including the sitemap.
@@ -105,8 +116,6 @@ print(greet("Gaspar"))
 
 Common language labels: `python`, `bash`, `css`, `javascript`, `go`, `sql`, `toml`, `yaml`, `json`
 
-For a shell session or commands without highlighting: use `bash` or `sh`.
-
 ```bash
 hugo server -D
 git push origin main
@@ -118,13 +127,6 @@ git push origin main
 
 **Unordered:**
 
-```
-- Item one
-- Item two
-  - Nested item
-- Item three
-```
-
 - Item one
 - Item two
   - Nested item
@@ -132,25 +134,27 @@ git push origin main
 
 **Ordered:**
 
-```
-1. First step
-2. Second step
-3. Third step
-```
-
 1. First step
 2. Second step
 3. Third step
 
 ---
 
-## Table
+## Task list
 
 ```
-| Column A | Column B | Column C |
-|---|---|---|
-| value    | value    | value    |
+- [x] Already done
+- [ ] Still to do
+- [ ] Another pending item
 ```
+
+- [x] Already done
+- [ ] Still to do
+- [ ] Another pending item
+
+---
+
+## Table
 
 | Tool | Purpose | Free |
 |---|---|---|
@@ -168,7 +172,33 @@ Images live in the same folder as the post's `index.md` (page bundle).
 ![Alt text describing the image](filename.png)
 ```
 
-Reference images by filename only — no path needed.
+---
+
+## Image with caption (figure)
+
+Use Hugo's built-in `figure` shortcode when you need a caption below the image.
+
+```
+{{</* figure src="filename.png" caption="Caption text goes here" */>}}
+```
+
+---
+
+## Footnotes
+
+```
+Some claim that Vim is the best editor.[^1] Others disagree.[^2]
+
+[^1]: They are correct.
+[^2]: They are wrong.
+```
+
+Some claim that Vim is the best editor.[^1] Others disagree.[^2]
+
+[^1]: They are correct.
+[^2]: They are wrong.
+
+Footnotes are numbered automatically and linked — clicking the number jumps to the note at the bottom of the page.
 
 ---
 
