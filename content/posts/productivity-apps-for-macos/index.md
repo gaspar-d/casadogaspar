@@ -20,23 +20,20 @@ categories:
   - Shortcuts
 ---
 
-{{<admonition success "What I mean by Productivity in this article" true>}}
+**What I mean by Productivity in this article:**
 
 - Apps that improve the way I interact with the SO and it's software.
 - In my case interaction is made by HomeRow as I'm a touch typist.
 - HomeRow is how the rest position of your hand over the keyboard is called with the fingers over asdf jkl;.
 - Apps on this article: [HomeRow](https://github.com/nchudleigh/homerow), HRM, Raycast.
 
-{{</admonition>}}
-
-{{<admonition warning "Can you type without looking at the keyboard?" true>}}
+**Can you type without looking at the keyboard?**
 
 - I don't think that people that can't type with all ten fingers and without looking at the keyboard will take the most
   of these tools. To be really sincere I think most of the tools of the article can make you even slow.
 - But if you're here because you're starting to think about learn some new skills, take the opportunity to learn how to
 become a touch typist.
 - Free typing training: [KeyBr](https://www.keybr.com/pt-br) and [EdClub](https://www.edclub.com/sportal/program-3.game)
-{{</admonition>}}
 
 I know Productivity can have many faces and I'm not defining a limiter here, by other standards I can make another article
 in the future where I put **Nvim+Tmux** or **Obsidian/Notion** as Productivity tools, but for the scope of today theme we're

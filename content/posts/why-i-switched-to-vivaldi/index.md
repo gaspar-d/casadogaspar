@@ -17,26 +17,19 @@ categories:
 
 ## **First things First**
 
-{{< admonition danger "Watch Danger" true >}}
-The release of Vivaldi 8.0 make a lot of my customizations unnecessary or deprecated, an update to this
-article is necessary.
-{{< /admonition >}}
+> **Watch out:** The release of Vivaldi 8.0 made a lot of my customizations unnecessary or deprecated — an update to this article is necessary.
 
-{{< admonition warning "What this post isn't" true >}}
+**What this post isn't:**
 
 - A deep tutorial about Vivaldi features.
 - A paid Ad.
 - The best way to use Vivaldi ever.
 
-{{</admonition>}}
-
-{{< admonition success "What this post is about:" true>}}
+**What this post is about:**
 
 - How I use it for my workflow.
 - The configs and keybindings that make sense for me.
 - A way for you see if this browser make sense for you.
-
-{{</admonition>}}
 
 ## **Why Vivaldi?**
 
@@ -93,7 +86,7 @@ Bellow is like I use the browser normally, with an eventual AI panel being open 
 I'm using it more than I
 use Google search these days.
 ![Image of Vivaldi on with all elements hidden](vivaldi-fullscreen.png)
-{{<admonition example "Shortcuts I use daily, some are custom">}}
+### Shortcuts I use daily, some are custom
 
 | Command | Shortcut |
 | --- | --- |
@@ -121,8 +114,6 @@ use Google search these days.
 | Workspace Switch Back | `⌥⌘←` |
 | Workspace Switch Forward | `⌥⌘→` |
 | Settings | `⌘,` |
-
-{{</admonition>}}
 
 ---
 
@@ -181,8 +172,4 @@ res screen.
 
 ![Image of the Vivaldi with custom css](vivaldi-css.png)
 
-{{< admonition info "That's it" true >}}
-If you liked what you saw here but aren't sure to give it a try because I didn't cited any specific need you
-have, give it a try,
-it's highly probably it'll have it.
-{{</ admonition >}}
+> If you liked what you saw here but aren't sure to give it a try because I didn't cited any specific need you have, give it a try — it's highly probable it'll have it.
