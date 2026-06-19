@@ -71,19 +71,3 @@ But the easiest install is via home brew with `brew install homerow`
 > It's free to use but has a small pop-up that'll sent you to a page to buy it paid version and help the project, and I
 > must say it's well deserved, the app is really well made and polished.
 So show some ~love~ money to the dev.
-
-
-Let's talk about these apps
-
-- HRM ->
-- Swish ->
-- Raycast ->
-- Annotate ->
-
-| App      | macOS      | Windows               | Linux                      |
-|----------|------------|-----------------------|----------------------------|
-| HRM      | ✅ Native  | Kanata / AutoHotkey   | Kanata / keyd              |
-| HomeRow  | ✅ Native  | No real equivalent    | keynav / xdotool           |
-| Swish    | ✅ Native  | GestureSign           | Picom / libinput gestures  |
-| Raycast  | ✅ Native  | Flow Launcher         | Albert / Ulauncher         |
-| Annotate | ✅ Native  | Greenshot             | Flameshot                  |

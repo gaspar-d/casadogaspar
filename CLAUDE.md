@@ -2,60 +2,51 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## Active work
-
-A custom Hugo theme is being built to replace FixIt. Design spec is in `DESIGN.md`.
-Implementation plan: remove FixIt submodule → build layouts + CSS → migrate existing posts (strip admonition shortcodes).
-
 ## What this is
 
-A Hugo static blog deployed to Cloudflare Pages at `https://casadogaspar.pages.dev/`. The theme is [FixIt](https://github.com/hugo-fixit/FixIt), loaded as a git submodule at `themes/FixIt/`.
+A Hugo static blog deployed to Cloudflare Pages at `https://casadogaspar.pages.dev/`. The theme is fully custom — no submodule, no external dependency. All templates live in `layouts/`, all styles in `assets/css/main.css`, JS in `assets/js/main.js`.
 
 ## Commands
 
 ```bash
-hugo server          # local dev server with live reload (http://localhost:1313)
-hugo server -D       # include draft posts
-hugo                 # build site to public/
+hugo server -D   # local dev server including drafts (http://localhost:1313)
+hugo             # production build to public/
 ```
 
 No npm or build toolchain — pure Hugo.
 
+## Theme
+
+Custom-built to match the design spec in `DESIGN.md`. Key decisions:
+
+- **Fonts:** Playfair Display (serif, italic accents + site title) · DM Sans (body + nav) · JetBrains Mono (code) — loaded from Google Fonts in `baseof.html`
+- **Palette:** warm parchment light mode, near-black warm dark mode — tokens defined as CSS custom properties in `main.css`
+- **Dark mode:** toggled via button in the nav (sun/moon), preference stored in `localStorage`, applied before first paint via inline script in `<head>`. CSS uses `[data-theme="dark"]` selector, not `@media`.
+- **Italic emphasis:** `em`/`i` elements render in Playfair Display italic in the accent colour (`--color-accent: #c4725a`) — this is the primary typographic signature
+- **ToC:** right sidebar, sticky, visible above 1100px. Powered by Hugo's `{{ .TableOfContents }}` with scroll-highlight via `IntersectionObserver` in `main.js`
+- **No admonition shortcode** — replaced with blockquotes in all existing posts (ADR in `DESIGN.md`)
+
 ## Content structure
 
-Posts live in `content/posts/` as **page bundles**: each post is a directory containing `index.md` and any co-located assets (images, SVGs, etc.).
-
-```
-content/posts/
-  why-i-switched-to-vivaldi/
-    index.md
-    cover.png
-    tabs-workspaces.png
-    ...
-```
+Posts are **page bundles**: a directory under `content/posts/` containing `index.md` and any co-located assets.
 
 ### Front matter
 
-Posts use YAML front matter. Example:
-
 ```yaml
 ---
-title: Indeed Vivaldi
-date: 2026-03-22T18:05:46-03:00
-draft: false
+title: Post Title
+date: 2026-06-19
+draft: false          # true = never publishes
 author:
   name: Gaspar
-description: "Short description"
-featuredImage: "cover.png"
+description: "One sentence for the post list and meta tags."
+featuredImage: "cover.png"   # optional, co-located image
 tags:
-  - browser
+  - tag-one
 categories:
-  - Tech
+  - Category
 ---
 ```
-
-- `draft: true` posts are excluded from the build unless `hugo server -D` is used.
-- `featuredImage` references a file co-located with the post's `index.md`.
 
 ### New post
 
@@ -63,20 +54,12 @@ categories:
 hugo new posts/<slug>/index.md
 ```
 
-The archetype (`archetypes/default.md`) sets `draft = true` by default.
+Archetype (`archetypes/default.md`) creates YAML front matter with `draft: true`.
 
-## Shortcodes
+### Reference post
 
-The FixIt theme provides shortcodes used throughout posts. The main one in use:
-
-```
-{{< admonition type "title" open >}}
-content
-{{< /admonition >}}
-```
-
-Valid types: `note`, `tip`, `info`, `success`, `warning`, `danger`, `failure`, `bug`, `question`, `quote`.
+`content/posts/writing-reference/index.md` — kept as `draft: true` permanently. Documents every markdown element and how it renders in this theme. Open it when unsure how to write something.
 
 ## Deployment
 
-Cloudflare Pages — pushing to `main` triggers an automatic deploy. The `static/_headers` file sets MIME types for Cloudflare. The `public/` directory is the build output and should not be committed.
+Cloudflare Pages — pushing to `main` triggers an automatic deploy. `static/_headers` sets MIME types. Never commit `public/`.
