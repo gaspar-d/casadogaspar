@@ -1,5 +1,6 @@
 ---
 title: Let's talk about these apps
+draft: true
 created: 2026-06-19
 ---
 # Some other ideas to cover

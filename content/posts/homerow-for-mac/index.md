@@ -1,18 +1,14 @@
 ---
 title: Productivity apps for macOS
 date: 2026-03-24
-draft: true
+draft: false
 author:
   name: Gaspar
 description: "Simple GUI apps to a better workflow on macOS"
 featuredImagePreview:
 featuredImage:
 tags:
-  - HRM
   - HomeRow
-  - Swish
-  - Raycast
-  - Annotate
 
 categories:
   - Productivity
