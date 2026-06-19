@@ -43,6 +43,28 @@
   headings.forEach(function (h) { observer.observe(h); });
 })();
 
+/* ─── Image lightbox ───────────────────────────────────────── */
+(function () {
+  var lightbox = document.getElementById('lightbox');
+  var lightboxImg = document.getElementById('lightbox-img');
+  if (!lightbox) return;
+
+  document.querySelectorAll('.prose img').forEach(function (img) {
+    img.addEventListener('click', function () {
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt;
+      lightbox.classList.add('open');
+    });
+  });
+
+  function close() { lightbox.classList.remove('open'); }
+
+  lightbox.addEventListener('click', close);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') close();
+  });
+})();
+
 /* ─── Code copy button ─────────────────────────────────────── */
 (function () {
   document.querySelectorAll('.prose pre').forEach(function (pre) {
