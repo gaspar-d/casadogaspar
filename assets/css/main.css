@@ -62,9 +62,9 @@ img { max-width: 100%; height: auto; display: block; }
   font-family: var(--font-serif);
   font-weight: 700;
   font-style: italic;
-  font-size: 1.35rem;
+  font-size: 1.75rem;
   text-decoration: none;
-  color: var(--color-text);
+  color: var(--color-accent);
 }
 
 .nav-right {
@@ -88,8 +88,8 @@ img { max-width: 100%; height: auto; display: block; }
   transition: color 0.15s;
 }
 
-.nav-links a:hover,
-.nav-links a.active { color: var(--color-text); }
+.nav-links a:hover { color: var(--color-text); }
+.nav-links a.active { color: var(--color-accent); }
 
 /* Theme toggle button */
 .theme-toggle {
